@@ -1,0 +1,26 @@
+{
+  
+    "background": {
+      "scripts": ["japscan.js"]
+    },
+  
+    "description": "Display ",
+  
+    "manifest_version": 2,
+  
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["japscan.js"]
+      }
+    ],
+
+    "name": "Japscan",
+  
+    "permissions": [
+      "http://*/*", "https://*/*", "contextMenus", "tabs", "idle", "webRequest", "webRequestBlocking", "webNavigation", "alarms", "storage", "notifications"
+    ],
+    "optional_permissions": [ "management" ],
+  
+    "version": "0.1"
+  }
